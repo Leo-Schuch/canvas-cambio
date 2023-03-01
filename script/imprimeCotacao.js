@@ -19,7 +19,7 @@ function imprimeCotacao(lista, nome, valor) {
     const listaItem = document.createElement("li");
     listaItem.innerHTML = `${multiplicador} ${
       multiplicador == 1 ? nome : plurais[nome]
-    } : R${(valor * multiplicador).toFixed(3)}`;
+    } : R$ ${(valor * multiplicador).toFixed(2)}`;
     lista.appendChild(listaItem);
   }
 }
